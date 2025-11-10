@@ -39,14 +39,12 @@ function App() {
     try {
       console.log('🚀 Enviando arquivos para API...');
       
-     const API_URL = import.meta.env.VITE_API_URL || '';
-const response = await axios.post(`${API_URL}/api/conciliar`, formData, {
-
-
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await axios.post(`${API_URL}/api/conciliar`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
-        responseType: 'blob' // Para receber o arquivo Excel
+        responseType: 'blob'
       });
 
       console.log('✅ Resposta recebida, criando download...');
@@ -99,8 +97,7 @@ const response = await axios.post(`${API_URL}/api/conciliar`, formData, {
   return (
     <div className="app">
       <div className="container">
-        
-<header className="header">
+        <header className="header">
           <h1>🏦 Sistema de Conferência Bancária Logzz</h1>
           <p>Faça upload das planilhas do extrato bancário e dados do sistema para gerar o relatório de conciliação</p>
         </header>
