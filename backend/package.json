@@ -1,30 +1,36 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "conciliacao-bancaria-backend",
+  "version": "1.0.0",
+  "description": "API de conciliação bancária",
+  "main": "src/api.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "vercel-build": "npm run build"  
+    "start": "node src/api.js",
+    "dev": "nodemon src/api.js",
+    "conciliar": "node src/app.js",
+    "api": "node src/api.js"
   },
+  "keywords": [
+    "conciliacao",
+    "bancaria",
+    "excel",
+    "nodejs",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^1.12.2",
-    "multer": "^2.0.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "xlsx": "^0.18.5",
+    "lodash": "^4.17.21",
+    "moment-timezone": "^0.5.43",
+    "colors": "^1.4.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.3",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.4.0",
-    "vite": "^7.1.7"
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
