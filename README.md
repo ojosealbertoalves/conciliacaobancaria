@@ -17,7 +17,7 @@ A full-stack web application for automated bank reconciliation, comparing bank s
 
 ## 🔗 Live Demo
 
-- **Frontend**: [https://conciliacaobancaria.netlify.app](https://conciliacaobancaria.netlify.app)
+- **Frontend**: [https://conciliacaologzz.netlify.app/](https://conciliacaologzz.netlify.app/)
 - **Backend API**: [https://conciliacaobancaria.vercel.app](https://conciliacaobancaria.vercel.app)
 
 ## 🛠️ Tech Stack
